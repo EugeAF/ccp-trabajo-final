@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Recetas</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Cookie&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nerko+One&display=swap" rel="stylesheet">
+    <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
+    
+</head>
+<body>
+    <header class="header-pagina">
+        <h1 class= "header-titulo-pagina">Tu Recetario Web</h1>
+    </header>
+    <nav class="navbar" id="navbar">
+        <ul class="menu">
+            <li><a href="#header-titulo">Agregar Receta</a></li>
+            <li id="prueba"><a href="#listado">Recetas</a>
+                <ul class="submenu">
+                    <li><a href="#desayunos-meriendas">Desayunos y Meriendas</a></li>
+                    <li><a href="#almuerzos-cenas">Almuerzos y Cenas</a></li>
+                    <li><a href="#postres">Postres</a></li>
+                </ul>                    
+            </li>             
+            <li><a href="https://genial.guru/creacion-recetas/20-consejos-esenciales-para-la-cocina-60805/">Tips</a></li>
+            <li><a href="#footer-redes-sociales">Contactanos</a></li>
+        </ul>  
+    </nav>
+    <section class="agragar-recetas">
+        <header class="header-titulo" id="header-titulo">
+            <h1 class="headers-titulos">Agregar Receta:</h1>
+        </header>
+            <div class="grupo">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre">
+            </div>
+            <div class="grupo">
+                <label for="autor">Autor:</label>
+                <input type="text" id="autor" placeholder="Nombre y Apellido">
+            </div>
+            <div class="grupo">
+                <label for="dificultad">Nivel de Dificultad:</label>
+                <input type="text" id="dificultad" placeholder="Principiante, Intermedio, Avanzado">
+            </div>
+            <div class="grupo">
+                <label for="tiempo-preparacion">Tiempo de Preparacion:</label>
+                <input type="text" id="tiempo-preparacion">
+            </div>
+            <div class="grupo">
+                <label for="ingredientes">Ingredientes:</label>
+                <input type="text" id="ingredientes" placeholder="Separe cada ingrediente con una coma y un espacio">
+            </div>
+            <div class="grupo" id="prueba">
+                <label for="procedimiento" class="procedimiento">Procedimiento:</label>
+                <textarea type="text" id="procedimiento"></textarea>
+            </div>
+            <div>
+                <select name="tipo-comida" id="tipo-comida">
+                    <option value="desayuno-meriendas">Desayunos y Meriendas</option>
+                    <option value="almuerzos-cenas">Almuerzos y Cenas</option>
+                    <option value="postres">Postres</option>
+                </select>
+            </div>
+            <button id="btn-agregar-receta">Agregar Receta</button>
+    </section>
+    <section class="recetas">
+        <header class="titulo">
+            <h1 class="listado" id="listado">Lista de Recetas</h1>
+            <h1 id="desayunos">Desayunos y Meriendas:</h1><a id="desayunos-meriendas"></a>
+                
+            
+            <div id="lista-desayunos-meriendas" class="lista-recetas">
+                        <p class="correcion">
+                            <span class="desayunos-meriendas-nombre"></span> 
+                            <span class="desayunos-meriendas-autor"></span>
+                            <span class="desayunos-meriendas-dificultad"></span>
+                            <span class="desayunos-meriendas-tiempo-preparacion"></span>
+                            <span class="desayunos-meriendas-ingredientes-palabra"></span>
+                        </p>
+                            <ul class="desayunos-meriendas-ingredientes"></ul>
+                        <p>
+                            <span class="desayunos-meriendas-procedimiento-palabra"></span>
+                            <span class="desayunos-meriendas-procedimiento"></span> 
+                            <span class="desayunos-meriendas-tipo-comida"></span>
+                            <span class="desayunos-meriendas-linea-separa-recetas"></span>
+                        </p>
+                </div>
+
+
+                
+            <h1 id="almuerzos">Almuerzos y Cenas:</h1><a id="almuerzos-cenas"></a>
+                <div id="lista-almuerzos-cenas" class="lista-recetas">
+                        <p>
+                            <span class="almuerzos-cenas-nombre"></span> 
+                            <span class="almuerzos-cenas-autor"></span>
+                            <span class="almuerzos-cenas-dificultad"></span>
+                            <span class="almuerzos-cenas-tiempo-preparacion"></span>
+                            <span class="almuerzos-cenas-ingredientes-palabra"></span>
+                        </p>
+                            <ul class="almuerzos-cenas-ingredientes"></ul>         
+                        <p>
+                            <span class="almuerzos-cenas-procedimiento-palabra"></span> 
+                            <span class="almuerzos-cenas-procedimiento"></span> 
+                            <span class="almuerzos-cenas-tipo-comida"></span>
+                            <span class="almuerzos-cenas-linea-separa-recetas"></span>
+                        </p>
+                </div>
+            <h1 id="postres" class="postres">Postres:</h1><a id="postres"></a>
+                <div id="lista-postres" class="lista-recetas">
+                        <p>
+                            <span class="postres-nombre"></span> 
+                            <span class="postres-autor"></span>
+                            <span class="postres-dificultad"></span>
+                            <span class="postres-tiempo-preparacion"></span>
+                            <span class="postres-ingredientes-palabra"></span>
+                        </p>
+                            <ul class="postres-ingredientes"></ul>
+                        <p>
+                            <span class="postres-procedimiento-palabra"></span> 
+                            <span class="postres-procedimiento"></span> 
+                            <span class="postres-tipo-comida"></span>
+                            <span class="postres-linea-separa-recetas"></span>
+                        </p>
+                </div>    
+        </header>
+    </section> 
+    <footer class="footer">
+        <h1 id="footer-redes-sociales">Siguenos en nuestras redes:</h1>
+            <a href="https://www.instagram.com/" class="footer-contactos">Instagram: @turecetarioweb</a>
+            <a href="https://www.facebook.com/" class="footer-contactos">Facebook: Tu recetario web</a>
+    </footer>
+</body>
+    <script src='app.js'></script>
+</html>
