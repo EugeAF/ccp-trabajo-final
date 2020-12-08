@@ -1,0 +1,409 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: whitesmoke;
+}
+
+.header-pagina{
+    text-align: center;
+    background-color: #F7D1C6;
+    padding-top: 0.5px;
+    font-family: 'Nerko One', cursive;
+    font-size: 30px;
+    margin-top: 1px;
+}
+
+.header-titulo-pagina{
+    margin-top: 1px;
+}
+
+nav{
+    background-color: #EDBBB2;
+    width: 541px;
+    height: 40px;
+    margin-bottom: 30px;
+    margin: 0px auto 160px auto;
+    font-family: 'Roboto', sans-serif;
+}
+
+nav ul li:hover{
+    background-color:#F7D1C6;
+}
+
+nav ul{
+    float: left;
+    display: flex;
+}
+
+nav ul li{
+    float: left;
+    list-style: none;
+    position: relative;
+}
+
+nav ul li a{
+    display: block;
+    padding: 0 32px;
+    line-height: 40px;
+}
+
+nav ul li ul{
+    display: none;
+    position: absolute;
+    background-color: #EDBBB2;
+    font-family: 'Roboto', sans-serif;
+}
+
+nav ul li ul a:hover{
+    background-color:#F7D1C6;
+}
+
+
+nav ul li:hover ul{
+    display: block;
+} 
+
+nav ul li ul li a{
+    padding: 16px 32px;
+    line-height: unset;
+    white-space: nowrap;
+}
+
+nav ul li ul li{
+    width: 100%;
+}
+
+.agragar-recetas {
+    background-color: #FFD7BF;
+    border: 1px solid black;
+    width: 1320px;
+    padding-left: 8px;
+    font-family: 'Roboto', sans-serif;
+    border-radius: 8px;
+    float: left;
+    margin-bottom: 20px;
+    height: 300px;
+    margin-left: 10px;
+}
+
+.headers-titulos{
+    margin-top: 10px;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+}
+
+input {
+    width: 200px;
+    height: 20px;  
+    border: 0px;
+    box-shadow: 2px 2px 5px #999         
+}
+
+input:focus {
+    outline: none;
+    border-bottom-color:  #E0B0A8;
+    border-bottom-style: solid;
+    border-bottom-width: 4px;
+}
+
+#nombre {
+    margin-bottom: 10px;
+}
+
+#autor {
+    margin-bottom: 10px;
+}
+
+#dificultad {
+    margin-bottom: 10px;
+    width: 210px;
+}
+
+#tiempo-preparacion {
+    margin-bottom: 10px;
+}
+
+#ingredientes {
+    margin-bottom: 10px;
+    width: 310px;
+}
+
+.procedimiento {
+    padding-bottom: 200px;
+}
+
+textarea {
+    width: 200px;
+    height: 20px;  
+    border: 0px;
+    box-shadow: 2px 2px 5px #999
+}
+
+textarea:focus {
+    outline: none;
+    border-bottom-color:  #E0B0A8;
+    border-bottom-style: solid;
+    border-bottom-width: 4px;
+}
+
+#tipo-comida {
+    margin-top: 10px;
+    border: 1px solid black;
+    border-radius: 8px;
+    font-family: 'Roboto', sans-serif;
+    background-color: #E0B9A8;
+    color: white;
+}
+
+#btn-agregar-receta {
+    color:#E0B9A8;
+    border-color: #E0B9A8;
+    background-color: whitesmoke;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    font-size: 15px;
+    padding: 6px;
+    border-radius: 5px;
+    font-family: 'Roboto', sans-serif;
+}
+
+#btn-agregar-receta:hover {
+    color: whitesmoke;
+    background-color: #E0B9A8 ;
+}
+
+.titulo {
+    font-family: 'Roboto', sans-serif;    
+}
+
+.listado {
+    text-align: center;
+    text-decoration: underline;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.lista-recetas {
+    background-color: whitesmoke;
+    padding-left: 10px;
+    padding-top: 10px;
+}
+
+#desayunos {
+    font-size: 20px;
+    background-color:#EDBBB2;
+    padding: 10px;
+    text-align: left;
+    box-shadow: 2px 2px 5px #999;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.desayunos-meriendas-nombre {
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.desayunos-meriendas-autor {
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+
+}
+
+.desayunos-meriendas-dificultad {
+    font-style: italic;
+}
+
+.desayunos-meriendas-tiempo-preparacion {
+    font-style: italic;
+}
+
+.desayunos-meriendas-ingredientes-palabra{
+    text-align: center;
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    font-size: 18px;
+}
+
+.desayunos-meriendas-ingredientes {
+    margin-left: 20px;
+}
+
+.desayunos-meriendas-procedimiento-palabra{
+    text-align: center;
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    font-size: 18px;
+}
+
+.desayunos-meriendas-procedimiento {
+    text-align: justify;
+}
+
+hr {
+    border: 1px dashed grey; 
+    height: 0; 
+    width: 98%;
+}
+
+#almuerzos {
+    font-size: 20px;
+    background-color:#EDBBB2;
+    box-shadow: 2px 2px 5px #999;
+    padding: 10px;
+    text-align: left;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 10px;
+}
+
+.almuerzos-cenas-nombre {
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.almuerzos-cenas-autor {
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+} 
+.almuerzos-cenas-dificultad {
+    font-style: italic;
+}
+
+.almuerzos-cenas-tiempo-preparacion {
+    font-style: italic;
+}
+
+.almuerzos-cenas-ingredientes-palabra {
+    text-align: center;
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    font-size: 18px;
+}
+
+.almuerzos-cenas-ingredientes {
+    margin-left: 20px;
+}
+
+.almuerzos-cenas-procedimiento-palabra {
+    text-align: center;
+    display: block;
+    font-weight: bold;
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+.almuerzos-cenas-procedimiento {
+    text-align: justify;
+    
+}
+
+.postres {
+    text-align: left;
+    background-color:#EDBBB2;
+    font-size: 20px;    
+    box-shadow: 2px 2px 5px #999;
+    padding: 10px;    
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 10px;
+}
+
+.postres-nombre {
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.postres-autor {
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+} 
+.postres-dificultad {
+    font-style: italic;
+}
+
+.postres-tiempo-preparacion {
+    font-style: italic;
+}
+
+.postres-ingredientes-palabra {
+    text-align: center;
+    display: block;
+    font-weight: bold;
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+.postres-ingredientes {
+    margin-left: 20px;
+}
+
+.postres-procedimiento-palabra {
+    text-align: center;
+    display: block;
+    font-weight: bold;
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+.postres-procedimiento {
+    text-align: justify;
+    
+}
+
+.footer {
+    background-color: #F7D1C6;
+    color: black;
+    padding: 10px;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px; 
+    margin-top: 20px;  
+}
+
+ #footer-redes-sociales {
+    font-size: 15px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+#lista-almuerzos-cenas{
+    margin-top: 10px;
+    background-color: #eeeeee;
+    border-radius: 2px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+#lista-postres{
+    margin-top: 10px;
+    background-color: #eeeeee;
+    border-radius: 2px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+#lista-desayunos-meriendas{
+    margin-top: 10px;
+    background-color: #eeeeee;
+    border-radius: 2px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
